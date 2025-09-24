@@ -97,7 +97,10 @@
             padding: 0;
             background-color: transparent;
             border-radius: 0;
-            display: block;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 15px;
             
             
             
@@ -112,8 +115,8 @@
         .legend-item:last-child {
             font-size: 11px;
             color: #777;
-            margin-top: 5px; text-align: left;
-            max-width: 300px; word-wrap: break-word; white-space: normal;
+            text-align: right; flex: 1;
+            flex-shrink: 1; min-width: 0; word-wrap: break-word; white-space: normal;
         }
 
         .legend-arrow {
